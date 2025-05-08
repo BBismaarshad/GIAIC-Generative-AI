@@ -19,8 +19,11 @@ Then FastAPI is a great tool!
 
 ## Key Features of FastAPI:
 ✅ Async support – Gives fast responses using async/await
+
 ✅ Type hints – Uses Python's type system for automatic data checks
+
 ✅ Auto documentation – Creates docs using Swagger UI and ReDoc automatically
+
 ✅ Easy to learn – Feels like Flask, but with modern features
 
 ##Example Code (Small “Hello World” API):
@@ -56,6 +59,23 @@ uv add "fastapi[standard]"
 
 -httpx: For testing
 
+### FastAPI folder structure
+```
+fastdca-p1/               ← 📁 Project folder
+├── .venv/                ← 🐍 Virtual environment (automatically created by `uv`)
+├── main.py               ← 🧠 FastAPI app code (Hello World is written here)
+├── pyproject.toml        ← 📦 Project settings and list of required libraries
+├── uv.lock               ← 🔒 Lock file for dependencies (auto-generated)
+└── README.md             ← 📄 Optional: Introduction or info about the project
+```
+### Role of Important Files
+File/Folder	Purpose
+main.py	To write API endpoints (the main code)
+pyproject.toml	To list which libraries your project needs
+.venv/	A separate environment that has only this project’s packages
+uv.lock	Stores the exact versions of the installed libraries
+README.md	Gives an overview or instructions about the project
+
 ## Step 4:
 Create a "Hello World" API
 Create the file:``` main.py ```
@@ -77,10 +97,13 @@ def read_item(item_id: int, q: str | None = None):
 ### To Understand:
 @app.get("/"):
 When someone opens / in the browser, it will return:
+
 {"Hello": "World"}
 
 @app.get("/items/{item_id}"):
+
 When someone opens /items/10 (or any number), it will return the item ID in the response.
+
 If there's an extra query string like ?q=abc, that will also be included in the response.
 
 
