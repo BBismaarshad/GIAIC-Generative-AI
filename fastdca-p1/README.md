@@ -120,9 +120,9 @@ fastapi dev main.py
  ## Step 6: 
  View the API in the Browser
  
- Open:``` http://localhost:8000``` → You’ll see: ```{"Hello": "World"}```
+ Open: ``` http://localhost:8000```  → You’ll see:  ```{"Hello": "World"}```
 
-Try: ```http://localhost:8000/items/5?q=test``` → You’ll see:``` {"item_id": 5, "q": "test"}```
+Try:  ```http://localhost:8000/items/5?q=test```  → You’ll see: ``` {"item_id": 5, "q": "test"}```
 
 
 
