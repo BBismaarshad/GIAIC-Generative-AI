@@ -69,17 +69,17 @@ fastdca-p1/               ← 📁 Project folder
 └── README.md             ← 📄 Optional: Introduction or info about the project
 ```
 ### Role of Important Files
-File/Folder 👉 Purpose
+File/Folder  → Purpose
 
-main.py 👉 To write API endpoints (the main code)
+main.py  → To write API endpoints (the main code)
 
-pyproject.toml 👉 To list which libraries your project needs
+pyproject.toml  → To list which libraries your project needs
 
-.venv/ 👉 A separate environment that has only this project’s packages
+.venv/  → A separate environment that has only this project’s packages
 
-uv.lock	👉 Stores the exact versions of the installed libraries
+uv.lock	 → Stores the exact versions of the installed libraries
 
-README.md 👉 Gives an overview or instructions about the project
+README.md  → Gives an overview or instructions about the project
 
 ## Step 4:
 Create a "Hello World" API
@@ -110,5 +110,27 @@ When someone opens / in the browser, it will return:
 When someone opens /items/10 (or any number), it will return the item ID in the response.
 
 If there's an extra query string like ?q=abc, that will also be included in the response.
+
+## Step 5: 
+Run the Server
+Run it using the FastAPI CLI (easy for development):
+```
+fastapi dev main.py
+```
+ ## Step 6: 
+ View the API in the Browser
+ 
+ Open:``` http://localhost:8000``` → You’ll see: ```{"Hello": "World"}```
+
+Try: ```http://localhost:8000/items/5?q=test``` → You’ll see:``` {"item_id": 5, "q": "test"}```
+
+
+
+
+
+
+
+
+
 
 
