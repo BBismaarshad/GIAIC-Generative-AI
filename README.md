@@ -1,5 +1,5 @@
 # Generative-AI
-# Introduction to Generative AI and How Artificial Intelligence (AI) Works
+## Introduction to Generative AI and How Artificial Intelligence (AI) Works
 
 This document provides a brief overview of Generative AI and explains the fundamental workings of Artificial Intelligence (AI).
 
