@@ -26,7 +26,7 @@ Then FastAPI is a great tool!
 
 ✅ Easy to learn – Feels like Flask, but with modern features
 
-##Example Code (Small “Hello World” API):
+## Example Code (Small “Hello World” API):
 
 ## Step 1:
 Create a Project Folder and Set Up a Virtual Environment
@@ -69,12 +69,17 @@ fastdca-p1/               ← 📁 Project folder
 └── README.md             ← 📄 Optional: Introduction or info about the project
 ```
 ### Role of Important Files
-File/Folder	Purpose
-main.py	To write API endpoints (the main code)
-pyproject.toml	To list which libraries your project needs
-.venv/	A separate environment that has only this project’s packages
-uv.lock	Stores the exact versions of the installed libraries
-README.md	Gives an overview or instructions about the project
+File/Folder 👉 Purpose
+
+main.py 👉 To write API endpoints (the main code)
+
+pyproject.toml 👉 To list which libraries your project needs
+
+.venv/ 👉 A separate environment that has only this project’s packages
+
+uv.lock	👉 Stores the exact versions of the installed libraries
+
+README.md 👉 Gives an overview or instructions about the project
 
 ## Step 4:
 Create a "Hello World" API
