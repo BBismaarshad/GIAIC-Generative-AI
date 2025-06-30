@@ -20,12 +20,19 @@ Ye `pip`, `virtualenv`, `pip-tools`, aur `poetry` ka **modern replacement** hai 
 ### 📁 New Project Initialize Karna
 # 1. New project start
 ```
-uv init --package skillswap
+uv init --package Foldename
+cd Foldename
+code .
+```
 
-# 2. Add dependencies
-uv add streamlit
-uv add pandas
+# 2. Activate virtual environment:
+```
+source .venv/bin/activate
 
+In Windows 
+\explore-uv\.venv\Scripts\activate
+```
 # 3. Run app
-uv run streamlit run app.py
+```
+uv run explore-uv
 ```
