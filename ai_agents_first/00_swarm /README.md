@@ -1,5 +1,5 @@
-#OpenAI Swarm & Agents SDK – Simple Explanation
-##Swarm Framework – The Foundation
+# OpenAI Swarm & Agents SDK – Simple Explanation
+## Swarm Framework – The Foundation
 Swarm was an experimental framework by OpenAI designed to:
 
 Organize multiple AI agents, let them work efficiently, and manage coordination between them.
