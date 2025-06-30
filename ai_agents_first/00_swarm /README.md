@@ -4,11 +4,11 @@ Swarm was an experimental framework by OpenAI designed to:
 
 Organize multiple AI agents, let them work efficiently, and manage coordination between them.
 
-Core Concepts
+## Core Concepts
 1. Agents
 Each agent is a small AI with a specific task.
 
-For example:
+```For example:```
 
 One agent handles billing questions.
 
@@ -19,10 +19,10 @@ Each agent has its own purpose and tools.
 2. Handoffs
 If one agent finds that another agent is better suited to handle a task, it passes control and context to that agent.
 
-Example:
+```Example:```
 A general support agent detects a billing question → it hands over the task to the billing agent.
 
-Benefits of Swarm
+## Benefits of Swarm
 Scalable: Easy to grow the system with more agents.
 
 Efficient: Agents work in parallel.
@@ -32,7 +32,7 @@ Modular: Each agent handles only what it's good at.
 Agents SDK – The Production Upgrade
 Swarm was an experiment. It worked so well that OpenAI built a full production version:
 
-Agents SDK
+# Agents SDK
 
 Key Features of Agents SDK
 Advanced orchestration: Manage complex workflows between agents.
@@ -53,7 +53,7 @@ Pattern	📖 What It Means	⚙️ How It's Used in Agents SDK
 4. Orchestrator-Worker	One main agent assigns subtasks to others.	Orchestrator agent manages and delegates work.
 5. Evaluator-Optimizer	Review and improve results using feedback.	Use guardrails or evaluator agents to enhance quality.
 
-Example Use Case: Blog Post Creation
+```Example Use Case: Blog Post Creation```
 Let’s say the goal is to write a blog post with formatting and SEO:
 
 Research Agent – collects topic information
@@ -66,7 +66,7 @@ Reviewer Agent – checks and suggests improvements
 
 Each agent can pass the task to another using handoffs.
 
-##Summary
+## Summary
 Swarm was an experimental framework for managing multiple AI agents.
 
 Agents SDK is the advanced, production-ready version of Swarm.
