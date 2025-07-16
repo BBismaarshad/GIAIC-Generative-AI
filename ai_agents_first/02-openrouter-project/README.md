@@ -1,4 +1,4 @@
-# 🤖 OpenRouter AI Test Project
+#  OpenRouter
 
 Yeh project OpenRouter ka use karke multiple AI models ko test karne ke liye banaya gaya hai. Is mein hum ne OpenAI jaisa API use kiya hai jo OpenRouter ke through 50+ free models ko access karta hai.
 
@@ -35,7 +35,7 @@ data = {
 
 response = requests.post(url, headers=headers, json=data)
 print(response.json())
-
+```
 ###Rate Limits (Free Models)
 200 requests per day
 
