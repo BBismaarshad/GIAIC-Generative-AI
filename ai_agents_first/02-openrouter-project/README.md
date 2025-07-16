@@ -43,13 +43,7 @@ print(response.json())
 
 Models ending with :free are free to use
 
-📘 Useful Links
-🔗 OpenRouter Website
-
-🔗 OpenRouter API Docs
-
-🔗 Gemini API + OpenAI Compatible
-
+###
 🙋‍♀️ Author
 Made with ❤️ by Bisma Arshad
 
