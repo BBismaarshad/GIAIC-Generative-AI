@@ -6,5 +6,4 @@ agent= Agent(
 )
 
 result = Runner.run_sync(agent , "Holle agent")
-
 print (result.final_output)
