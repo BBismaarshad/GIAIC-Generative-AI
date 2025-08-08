@@ -37,6 +37,7 @@ Tracing: Can be turned off globally for all runs.
 Tracing: You can turn it off in the config.
 
 ## explain 
+###  1. Async (Low-Level) Version
 ```
 async def main():
     agent = Agent(..., model=OpenAIChatCompletionsModel(...))
@@ -55,3 +56,26 @@ Good for: quick testing, maximum flexibility, or one-time runs.
 ❌ Downside:
 
 Not reusable — you must write all the setup again every time.
+
+### 2. Run-Level Config Version
+```
+config = RunConfig(
+    model=model,
+    model_provider=external_client,
+    tracing_disabled=True
+)
+result = Runner.run_sync(agent, ..., run_config=config)
+```
+✅ In this:
+
+Uses asyncio → runs without blocking other code.
+
+Every time, you manually set up the Client, Model, and Agent.
+
+You need await to get the response.
+
+Best for: testing, flexibility, or one-time use.
+
+❌ Not reusable:
+
+You have to write everything again each time.
