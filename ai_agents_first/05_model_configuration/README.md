@@ -89,3 +89,50 @@ Centralized settings → less repeated code.
 ❌ Downside:
 
 You still need some setup in every script.
+
+### 3. Global Config Version
+```
+set_default_openai_client(...)
+set_default_openai_api(...)
+set_tracing_disabled(...)
+```
+In this:
+
+You set up everything globally:
+
+Client
+
+API type (e.g., "chat_completions")
+
+Tracing turned off
+
+In the agent, you only give the model name.
+```
+Agent(..., model="gemini-2.0-flash")
+```
+Now these default settings are applied everywhere automatically.
+
+✅ Advantages:
+
+Most reusable and clean setup.
+
+Client and model set in one place → later you only write the agent and prompt.
+
+❌ Downside:
+
+Not good if you need different clients/models in the same script.
+When to Use Which?
+
+Learning / Experimenting: Use Async Low-Level
+
+Medium apps / Running the same agent multiple times: Use RunConfig
+
+Production / Large projects: Use Global Config
+
+### Final Summary
+
+Async: You manually set up everything (client, model, agent) and use await.
+
+RunConfig: You make one config object that stores all settings, and the agent uses it.
+
+Global: You set up everything once globally, then later you only write the agent and prompt.
