@@ -36,4 +36,22 @@ Reusability: High — works in any part of the code.
 Tracing: Can be turned off globally for all runs.
 Tracing: You can turn it off in the config.
 
+## explain 
+```
+async def main():
+    agent = Agent(..., model=OpenAIChatCompletionsModel(...))
+    result = await Runner.run(agent, "...")
+```
+✅ What this means:
 
+You’re using asyncio → runs in the background without stopping other code.
+
+Every time, you have to manually set up the client, model, and agent.
+
+To get the result, you use await.
+
+Good for: quick testing, maximum flexibility, or one-time runs.
+
+❌ Downside:
+
+Not reusable — you must write all the setup again every time.
