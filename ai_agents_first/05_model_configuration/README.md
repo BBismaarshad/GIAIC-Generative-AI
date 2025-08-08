@@ -11,7 +11,7 @@ Reusability: Low — because everything is hardcoded.
 
 Tracing (logging): You must turn it off manually.
 
-#2. Run-Level Config
+# 2. Run-Level Config
 How it runs: Runs normally (step-by-step), not in the background.
 
 Settings: You use a RunConfig object that stores all settings for that run.
@@ -35,4 +35,5 @@ Reusability: High — works in any part of the code.
 
 Tracing: Can be turned off globally for all runs.
 Tracing: You can turn it off in the config.
+
 
