@@ -66,16 +66,26 @@ config = RunConfig(
 )
 result = Runner.run_sync(agent, ..., run_config=config)
 ```
-✅ In this:
+In this:
 
-Uses asyncio → runs without blocking other code.
+You make a RunConfig that stores:
 
-Every time, you manually set up the Client, Model, and Agent.
+Model
 
-You need await to get the response.
+Client (provider)
 
-Best for: testing, flexibility, or one-time use.
+Tracing settings
 
-❌ Not reusable:
+The model is not given directly to the agent — it comes from the config.
 
-You have to write everything again each time.
+Uses run_sync(...), so no async needed.
+
+✅ Advantages:
+
+The same RunConfig can be reused with multiple agents.
+
+Centralized settings → less repeated code.
+
+❌ Downside:
+
+You still need some setup in every script.
