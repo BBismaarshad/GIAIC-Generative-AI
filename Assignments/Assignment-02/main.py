@@ -66,7 +66,6 @@ bank_agent = Agent(
 )
 
 user_context = Account(name="Bisma", pin= 5678)
-# propmt =input( "Hello ma Bankig Agent! What can a help you:\n ")
 
 def main():
     result = Runner.run_sync(bank_agent , "I want to my balance my account on is 309473804" , context=user_context, run_config=config )
