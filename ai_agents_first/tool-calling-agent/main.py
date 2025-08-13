@@ -3,7 +3,6 @@ from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel, set_t
 import os
 import requests
 
-# Load environment variables from .env file
 load_dotenv()
 
 set_tracing_disabled(disabled=True)
@@ -56,6 +55,6 @@ def main():
     result = Runner.run_sync(agent, prompt)
     print(result.final_output)
 
-# Run the script
+
 if __name__ == "__main__":
     main()
